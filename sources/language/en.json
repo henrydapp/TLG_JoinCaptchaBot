@@ -1,18 +1,18 @@
 {
     "START":
-        "Hello, I am a Bot that sends an image captcha for each new user that joins a group, and kicks anyone that can't solve the captcha within a specified time.\n\nIf a user tries to join the group 5 times in a row and never solves the captcha, I will assume that this \"user\" is a bot, and it will be banned. Also, any message that contains an URL sent by a new \"user\" before the captcha is completed will be considered spam and will be deleted.\n\nRemember to give me administration privileges to kick-ban users and remove messages.\n\nCheck /help command for more information about my usage.\n\nAm I useful? Check /about command and consider making a donation to keep me active.",
+        "Xin chào, mình là Bot dùng để gửi captcha bằng hình ảnh mỗi khi có một thành viên mới muốn tham gia vào một group, và kick tất cả những tài khoản không hoàn thành việc nhập captcha trong một khoảng thời gian nhất định.\n\nNếu một user mà cố tình tham gia vào group 5 lần mà không giải được captcha, mình sẽ cho \"user\" đó là một bot, và sẽ banned user đó ngay lập tức. Bên cạnh đó, tất cả tin nhắn có đính kèm URL được gửi bởi user \"user\" trước khi hoàn thành việc giải captcha sẽ bị đánh dấu là spam và bị xóa ngay lập tức.\n\nHãy nhớ cấp cho mình quyền kick-ban users xóa tin nhắn.\n\nCheck /help command để xem thêm về cách sử dụng mình nhé.\n\nAm I useful? Check /about command and consider making a donation to keep me active.",
 
     "HELP":
-        "Bot help:\n————————————————\n- I am a Bot that sends a captcha for each new user that joins a group, and kick any of them that can't solve the captcha within a specified time.\n\n- If a user tries to join the group 5 times in a row and never solves the captcha, I will assume that the \"user\" is a bot, and it will be banned.\n\n- Any message that contains an URL that has been sent by a new \"user\" before captcha is completed will be considered spam and will be deleted.\n\n- You need to grant me Administration rights so I can kick users and remove messages.\n\n- To preserve a clean group, I auto-remove all messages related to me when a captcha is not solved and the user was kicked (after 5 minutes).\n\n- The time that new users have to solve the captcha is 5 minutes by default, but it can be configured using the command /time.\n\n- You can turn captcha protection on/off using the commands /enable and /disable.\n\n- Configuration commands can only be used by group Administrators.\n\n- You can change the language that I speak, using the command /language.\n\n- You can configure captcha difficulty level using command /difficulty.\n\n- You can set captcha to use full numbers and letters A–Z, or numbers and letters A–F, or just numbers (default), or just a button, using command /captcha_mode.\n\n- You can configure a custom welcome message with command /welcome_msg.\n\n- You can enable an option to let me apply restriction to new joined users to send non-text messages using command /restrict_non_text.\n\n- If the Bot is Private, allow groups with command /allowgroup.\n\n- Check /commands to get a list of all avaliable commands, and a short description of all of them.",
+        "Bot help:\n————————————————\n- Mình là Bot dùng để gửi captcha bằng hình ảnh mỗi khi có một thành viên mới muốn tham gia vào một group, và kick tất cả những tài khoản không hoàn thành việc nhập captcha trong một khoảng thời gian nhất định.\n\n- Nếu một user mà cố tình tham gia vào group 5 lần mà không giải được captcha, mình sẽ cho \"user\" đó là một bot, và sẽ banned user đó ngay lập tức.\n\n- Tất cả tin nhắn có đính kèm URL được gửi bởi user \"user\" trước khi hoàn thành việc giải captcha sẽ bị đánh dấu là spam và bị xóa ngay lập tức.\n\n- You need to grant me Administration rights so I can kick users and remove messages.\n\n- To preserve a clean group, I auto-remove all messages related to me when a captcha is not solved and the user was kicked (after 5 minutes).\n\n- The time that new users have to solve the captcha is 5 minutes by default, but it can be configured using the command /time.\n\n- You can turn captcha protection on/off using the commands /enable and /disable.\n\n- Configuration commands can only be used by group Administrators.\n\n- You can change the language that I speak, using the command /language.\n\n- You can configure captcha difficulty level using command /difficulty.\n\n- You can set captcha to use full numbers and letters A–Z, or numbers and letters A–F, or just numbers (default), or just a button, using command /captcha_mode.\n\n- You can configure a custom welcome message with command /welcome_msg.\n\n- You can enable an option to let me apply restriction to new joined users to send non-text messages using command /restrict_non_text.\n\n- If the Bot is Private, allow groups with command /allowgroup.\n\n- Check /commands to get a list of all avaliable commands, and a short description of all of them.",
 
     "CMD_NOT_ALLOW":
         "Only an Admin can use this command.",
 
     "LANG_CHANGE":
-        "Language changed to English.",
+        "Language changed to Vietnamese.",
 
     "LANG_SAME":
-        "I am already in English.\n\nSupported languages:\n{}",
+        "I am already in Vietnamese.\n\nSupported languages:\n{}",
 
     "LANG_BAD_LANG":
         "Invalid language provided.\n\nSupported languages:\n{}",
@@ -57,7 +57,7 @@
         "Welcome message disabled.",
 
     "WELCOME_MSG_SET_NOT_ARG":
-        "Place the welcome message after the command.\n\nExample:\n/welcome_msg Hi $user, welcome to the group and remember to be respectful with other users.\n\nDisable the message:\n/welcome_msg disable",
+        "Place the welcome message after the command.\n\nExample:\n/welcome_msg Chào $user, chào mừng bạn đến với group mà nên nhớ luôn tôn trọng các thành viên khác.\n\nDisable the message:\n/welcome_msg disable",
 
     "RESTRICT_NON_TEXT_MSG_ENABLED":
         "Restriction to send non-text messages for new users enabled. I'm gonna remove recently joined user messages that are not text messages.",
@@ -96,22 +96,22 @@
         "Ignore list of the chat is empty.",
 
     "NEW_USER_CAPTCHA_CAPTION":
-        "Hello {}, welcome to {}. Please write a message with the numbers and/or letters that appear in this image to verify that you are a human. If you don't solve the captcha in {} mins, you will be automatically kicked out of the group.",
+        "Xin chào {}, chào mừng bạn đến với {}. Vui lòng nhập captcha bên trên vào ô trả lời bên dưới và gửi đi. Nếu bạn không hoàn thành việc giải captcha trong vòng {} phút, bạn sẽ bị kick khỏi group.",
 
     "NEW_USER_BUTTON_MODE":
-        "Hello {}, welcome to {}. Please press the button below to verify that you are a human. If you don't do this in {} mins, you will be automatically kicked out of the group.",
+        "Xin chào {}, chào mừng bạn đến với {}. Vui lòng nhập captcha bên trên vào ô trả lời bên dưới và gửi đi. Nếu bạn không hoàn thành việc giải captcha trong vòng {} phút, bạn sẽ bị kick khỏi group.",
 
     "CAPTCHA_SOLVED":
-        "Captcha solved, user verified.\nWelcome to the group, {}",
+        "Captcha đã được giải thành công.\nChào mừng bạn đến với group, {}",
 
     "CAPTCHA_INCORRECT_0":
-        "That is not the correct code. Try again...",
+        "Bạn đã nhập sai captcha. Vui lòng thử lại...",
 
     "CAPTCHA_INCORRECT_1":
-        "That is not the correct number. Check closely, the captcha has 4 numbers...",
+        "Bạn đã nhập sai. Hãy kiểm tra kỹ lại, captcha có 4 số...",
 
     "NEW_USER_KICK":
-        "{} has not completed the captcha in time. \"User\" was kicked out.",
+        "{} đã không hoàn thành việc giải captcha. \"User\" đã bị kick.",
 
     "NEW_USER_KICK_NOT_RIGHTS":
         "{} has not completed the captcha in time. I tried to kick out the \"User\", but I don't have administration rights to kick out users from the group.",
@@ -147,7 +147,7 @@
         "Removed a non-text message (image, audio, file...) from {}, for the sake of keeping Telegram free of Spam.\n\nYou can send non-text messages after you have solved the captcha.",
 
     "OTHER_CAPTCHA_BTN_TEXT":
-        "Other Captcha",
+        "Đổi captcha khác",
 
     "PASS_BTN_TEXT":
         "I'm not a Bot",
